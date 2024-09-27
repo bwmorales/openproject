@@ -31,11 +31,11 @@ class Queries::WorkPackages::Selects::RelationToTypeSelect < Queries::WorkPackag
     super
 
     set_name! type
-    self.type = type
+    @type = type
   end
 
   def set_name!(type)
-    self.name = :"relations_to_type_#{type.id}"
+    @name = :"relations_to_type_#{type.id}"
   end
 
   def caption

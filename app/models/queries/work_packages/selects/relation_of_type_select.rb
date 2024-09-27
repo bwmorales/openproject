@@ -28,7 +28,8 @@
 
 class Queries::WorkPackages::Selects::RelationOfTypeSelect < Queries::WorkPackages::Selects::RelationSelect
   def initialize(type)
-    self.type = type
+    @type = type
+
     super(name)
   end
 
