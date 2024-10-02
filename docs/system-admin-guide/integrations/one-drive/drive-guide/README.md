@@ -77,7 +77,7 @@ This will result in a JSON response. The `ID` usually is a triple, of which the 
 continue. With this site ID you can fetch the following endpoint:
 
 ```shell
-GET https://graph.microsoft.com/v1.0/sites/<SITE_ID>/drives
+GET https://graph.microsoft.com/v1.0/sites/<SITE_ID>/drive
 ```
 
 This will result in a list of drives. You can select the correct drive by its `name` and take the value of the `ID`.
